@@ -1,5 +1,156 @@
-venv
-venv_linux
-__pycache__
-.ruff_cache
-.pytest_cache
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Application logs and state
+*.log
+ccplayer.log
+config.toml
+position_history.json
+*.cache
+
+# FFmpeg downloaded binaries
+ffmpeg/
+ffmpeg-*-essentials_build/
+ffmpeg-*.zip
+ffmpeg-*.tar.gz
+ffmpeg-*.tar.xz
+
+# Media files for testing (but keep test fixtures)
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.flv
+*.webm
+*.m4v
+*.mpg
+*.mpeg
+*.wmv
+*.mp3
+*.aac
+*.flac
+*.wav
+*.ogg
+*.m4a
+!tests/fixtures/**/*
+
+# Build artifacts
+dist/
+installer/output/
+*.exe
+*.msi
+*.deb
+*.rpm
+*.dmg
+*.pkg
+*.AppImage
+
+# Performance profiling
+perf.data
+perf.data.old
+flamegraph.svg
+*.prof
+*.heap
+
+# Coverage reports
+coverage/
+*.lcov
+tarpaulin-report.html
+cobertura.xml
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+
+# Python virtual environments (for build scripts)
+venv/
+.env
+__pycache__/
+*.pyc
+
+# Rust workspace
+/target/
+**/*.rs.bk
+*.iml
+
+# macOS specific
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows specific
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux specific
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# CCPlayer specific
+/config/
+/cache/
+/user-data/
+screenshot*.png
+crash-*.txt
+/playlists/
+
+# Benchmark results
+/benches/results/
+criterion/
+
+# Integration test outputs
+/tests/output/
+/tests/temp/
+
+# Generated documentation
+/api-docs/
+
+# Package directories
+/packages/
+/releases/
+
+# Ignore lock files in examples
+/examples/**/Cargo.lock
